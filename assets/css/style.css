@@ -27,10 +27,14 @@
 .type{
     padding: 0;
     margin-bottom: 5px;
+    border-radius: 1rem;
     display: grid;
     grid-template-columns: 1.5rem 2rem;
-    column-gap: .4rem;
     align-items: center;
+    font-size: small;
+}
+.type-name{
+    padding-left: .1rem;
 }
 .pokemon-area{
     margin: auto;
