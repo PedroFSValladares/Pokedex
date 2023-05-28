@@ -7,73 +7,19 @@
         <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/declarations.css">
         <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="./assets/js/PokeAPI.js" defer></script>
+        <script src="./assets/js/main.js" defer></script>
         <title>Pokedex</title>
     </head>
     <body>
         <section class="pokemon-area">
             <h1>Pokedex</h1>
-            <ol class="pokemons-list">
-                <li class="pokemon Fire">
-                    <h3 class="pokemon-name">Charmander</h3>
-                    <section class="details">
-                        <ul class="pokemon-types">
-                            <li class="type Fire-type">
-                                <img src="./assets/icons/Fire.svg" class="type-image" alt=""/>
-                                <div class="type-name">
-                                    Fire
-                                </div>
-                            </li>
-                            <li class="type Fire-type">
-                                <img src="./assets/icons/Fire.svg" class="type-image" alt=""/>
-                                <div class="type-name">
-                                    Fire
-                                </div>
-                            </li>
-                        </ul>
-                        <img class="pokemon-image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"/>
-                    </section>
-                </li>
-                <li class="pokemon Fire">
-                    <h3 class="pokemon-name">Charmander</h3>
-                    <section class="details">
-                        <ul class="pokemon-types">
-                            <li class="type">
-                                <img src="./assets/icons/Fire.svg" class="type-image" alt=""/>
-                                <div class="type-name">
-                                    Fire
-                                </div>
-                            </li>
-                            <li class="type">
-                                <img src="./assets/icons/Fire.svg" class="type-image" alt=""/>
-                                <div class="type-name">
-                                    Fire
-                                </div>
-                            </li>
-                        </ul>
-                        <img class="pokemon-image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"/>
-                    </section>
-                </li>
-                <li class="pokemon Fire">
-                    <h3 class="pokemon-name">Charmander</h3>
-                    <section class="details">
-                        <ul class="pokemon-types">
-                            <li class="type">
-                                <img src="./assets/icons/Fire.svg" class="type-image" alt=""/>
-                                <div class="type-name">
-                                    Fire
-                                </div>
-                            </li>
-                            <li class="type">
-                                <img src="./assets/icons/Fire.svg" class="type-image" alt=""/>
-                                <div class="type-name">
-                                    Fire
-                                </div>
-                            </li>
-                        </ul>
-                        <img class="pokemon-image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"/>
-                    </section>
-                </li>
+            <ol class="pokemons-list" id="pokemons-list">
+                
             </ol>
+            <div class="btn-container">
+                <button onclick="get()" class="btn-load">Load More</button>
+            </div>
         </section>
     </body>
 </html>
